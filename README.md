@@ -1,27 +1,34 @@
 [b]Version 3.7.*[/b]
 
-Genetic Ascension offers you the opportunity to tailor your species to meet any need, serve any niche. The UI... does not. It's just not practical. You need to maintain a massive stable of templates, one per habitability type, that you have to constantly re-apply. Even then, you end up with pops with inappropriate traits for their jobs. 
+Genetic Ascension lets you tailor your species to meet any need, serve any niche. The UI... does not. You need to a massive stable of templates you have to constantly re-apply, and still end up with pops with the wrong traits. 
 
-This is my attempt at making getting the most out of Genetic Ascension slightly less painful.
+This mod should make Genetic Ascension slightly less painful - all the benefits, with less of the busywork.
 
-[h1]Optimized Genomes[/h1]
-The mod adds a new 2-point advanced trait, [b]Optimised Genome[/b], that rolls together the benefits of [b]Industrious[/b], [b]Agrarian[/b], [b]Thrifty[/b], [b]Ingenious[/b], and the advanced trait [b]Natural Machinist[/b]. It adds +15% to Energy, Food and Minerals production, +10% to Alloy and Consumer Goods production, as well as +25% Trade Value from jobs! No longer must you be annoyed by the fact you can't modify individuals to match their jobs, or have to constantly re-run Modify Species projects.
+[h1]Optimal Genomes[/h1]
+Advanced gene-modding unlocks the new 2-point trait [b]Optimised Genome[/b], that adds:
+[list][*]+15% Energy, Food & Minerals production [i](replacing Ingenious, Agrarian & Industrious)[/i]
+[*]+10% Alloy & Consumer Goods production [i](replacing Natural Machinist)[/i]
+[*]+25% Trade Value from jobs [i](replacing Thrifty)[/i]
+[*]0.5 Society Research upkeep [i](replacing the cost of running multiple Modify Species projects)[/i]
+[/list]
+Since there's (almost) no jobs the original traits overlap for, there's no problem with just combining them into one! You can easily reduce the upkeep cost, too:
+[list][*][b]Retroviral Manipulation[/b], the Genetics talent that reduces the cost to modify species by 50%, also reduces Society upkeep by 50%.
+[*][b]Gene Clinics[/b] and [b]Cyto-Revitalization Centers[/b] reduce Society upkeep by 15% and 30%.
+[*][b]Harsh Trush[/b], an archeology reward that reduces the cost to modify species by 20%, also reduces Society upkeep by 20%.
+[/list]
 
-However, there's a cost for this - the trait adds a 0.5 Society Research upkeep to pops with it (replacing the cost of Modify Species). This can be reduced by taking the Genetics tradition [b]Retroviral Manipulation[/b] (-50%), or building [b]Gene Clinics[/b] (-15%) or [b]Cyto-Revitalization Centers[/b] (-30%).
-
-It also changes the [b]Harsh Truth[/b] modifier from the Engineered Species archaeology chain, so that it reduces the Society Research upkeep of pops by the amount it reduces the cost of Modify Species projects.
-
-Plus, the mod also adds a new habitability type - [b]Optimised Habitability[/b], which just grants a flat 80% habitability across all basic planet types.
+Advanced gene-modding also unlocks [b]Optimised Habitability[/b], a flat 80% habitability across all basic planet types. This prevents you from needing an extra template for each planet type.
 
 [h1]FAQ[/h1]
 [quote]Why doesn't Optimised Genomes also include [b]Traditional[/b] (+Unity), [b]Charismatic[/b] (+Amenities), [b]Intelligent[/b] (+Research) or [b]Natural Physicists/Engineers/Sociologists[/b] (+Research)?[/quote]
 [list]
-	[*][b]Charismatic[/b] has extra effects related to diplomacy and Xenophile appeal. Folding it in would require making a lot of very wide-ranging changes.
+	[*][b]Charismatic[/b] has extra effects related to diplomacy and Xenophile appeal. You'd still need to take it for those.
 	[*][b]Intelligent[/b] conflicts with the advanced trait Erudite. Folding it in would effectively allow you to take both.
-	[*][b]Natural Physicists/Engineers/Sociologists[/b] overlap too much. There's no jobs that produce both Minerals and Food, so folding Industrious and Agrarian into one trait is fine, but researcher jobs produce Physics, Engineering and Society research so you'd get 3 points worth of benefit from a 2 point trait.
+	[*][b]Natural Physicists/Engineers/Sociologists[/b] overlap too much - researchers would benefit from all of them.
 	[*][b]Traditional[/b] only costs 1. I'm not quite sure about this one, if the admin benefits of including it outweigh the costs of effectively doubling its price.
 [/list]
-[quote]Can you make Optimised Habitability compatible with another mod that adds a bunch of extra planet types?[/quote]
+
+[quote]Can you make Optimised Habitability compatible with other mods that add extra planet types?[/quote]
 No, sorry. Don't use any mods like that, and I don't have time to make stuff I won't use.
 
 [h1]Compatibility[/h1]
