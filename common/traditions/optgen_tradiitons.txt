@@ -1,0 +1,9 @@
+tr_genetics_retrovirus = {
+	possible = {
+		has_tradition = tr_genetics_efficient_cloning
+	}
+	modifier = {
+		modify_species_cost_mult = -0.50
+		planet_pops_society_research_upkeep_mult = -0.50
+	}
+}

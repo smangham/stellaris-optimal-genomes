@@ -1,0 +1,89 @@
+optgen_trait_bio = {
+	cost = 2
+	initial = no
+	randomized = no
+
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 0.0
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { 
+		trait_industrious
+		trait_ingenious
+		trait_agrarian
+		trait_thrifty
+		trait_natural_machinist
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.15
+		planet_jobs_energy_produces_mult = 0.15
+		planet_jobs_food_produces_mult = 0.15
+		pop_job_trade_mult = 0.25
+		planet_jobs_alloys_produces_mult = 0.10
+		planet_jobs_consumer_goods_produces_mult = 0.10
+	}
+	
+	custom_tooltip_with_modifiers = optgen_trait_bio_tooltip
+
+	slave_cost = {
+		energy = 2000
+	}
+
+	assembly_score = {
+		modifier = {
+			add = 2
+			from = {
+				OR = {
+					has_farming_designation = yes
+					has_generator_designation = yes
+					has_mining_designation = yes
+					has_rural_designation = yes
+					has_industrial_designation = yes 
+				}
+			}
+		}
+	}
+}
+
+
+@primary = 0.80
+@secondary = 0.60
+@tertiary = 0.20
+
+trait_pc_optgen_preference = {
+	icon = "gfx/interface/icons/traits/optgen_trait_habitability.dds"
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	sorting_priority = 30
+
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	advanced_trait = yes
+	potential_crossbreeding_chance = 0.0
+
+	modifier = {
+		pc_desert_habitability = @primary
+		pc_arid_habitability = @primary
+		pc_savannah_habitability =@primary
+		pc_tropical_habitability = @primary
+		pc_continental_habitability = @primary
+		pc_tundra_habitability = @primary
+		pc_arctic_habitability = @primary
+		pc_ocean_habitability = @primary
+		pc_alpine_habitability = @primary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

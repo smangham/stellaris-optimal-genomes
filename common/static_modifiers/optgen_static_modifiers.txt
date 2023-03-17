@@ -1,0 +1,5 @@
+engineered_species_revelation = {
+	modify_species_cost_mult = -0.25
+	planet_pops_society_research_upkeep_mult = -0.2
+	pop_ethic_xenophobe_attraction_mult = 0.20
+}

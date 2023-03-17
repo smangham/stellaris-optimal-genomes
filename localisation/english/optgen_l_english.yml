@@ -1,0 +1,9 @@
+﻿l_english: 
+ mod_planet_pops_society_research_upkeep_mult:0 "Pop Society Research Upkeep"
+ 
+ optgen_trait_bio:0 "Optimised Genome"
+ optgen_trait_bio_desc:0 " §LThis species' genome is highly flexible and responsive. Routine gene therapy allows them to gain and shed everything from muscle mass to social acuity as easily as another species might change their clothes.§!"
+ optgen_trait_bio_tooltip:2 "£society_research£ Society Research Upkeep: §R+0.5§!"
+
+ trait_pc_optgen_preference:0 "Optimised Habitability"
+ trait_pc_optgen_preference_desc:0 "§LThe highly-optimised genome of this species can seamlessly adapt to any climate.§!"
