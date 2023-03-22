@@ -1,3 +1,13 @@
+Lithoid & plantoid advanced traits
+Intelligent -> Erudite
+Adaptive -> Robust
+Slave -> Nerve Stapled (not trait_zombie)
+trait_presapient_proles -> Optimal Genome
+trait_presapient_natural_intellectuals -> Erudite
+
+Switch to Optimal Habitability
+
+
 [b]Version 3.7.*[/b]
 
 Genetic Ascension lets you tailor your species to meet any need, serve any niche. The UI... does not. You need to a massive stable of templates you have to constantly re-apply, and still end up with pops with the wrong traits. 
@@ -16,8 +26,11 @@ Since there's (almost) no jobs the original traits overlap for, there's no probl
 [*][b]Gene Clinics[/b] and [b]Cyto-Revitalization Centers[/b] reduce Society upkeep by 15% and 30%.
 [*][b]Harsh Trush[/b], an archeology reward that reduces the cost to modify species by 20%, also reduces Society upkeep by 20%.
 [/list]
-
 Advanced gene-modding also unlocks [b]Optimised Habitability[/b], a flat 80% habitability across all basic planet types. This prevents you from needing an extra template for each planet type.
+
+Once you finish the Genetic Ascension tree, you unlock [b]Genetic Optimisation Policy[/b], which can be left as special projects only or as:
+[list][*][b]Remediate Habitability:[/b] Replaces basic habitabilities with [b]Optimised Habitibility[/b], once per month.
+[*][b]Upgrade Traits:[/b] Replaces obsoleted production traits with [b]Optimised Genome[/b], as well as replacing Extremely Adaptive with [b]Robust[/b] (as they cost the same), once per month. Applies a 5 Society Research upkeep to pops who will have their traits replaced.[/list]
 
 [h1]FAQ[/h1]
 [quote]Why doesn't Optimised Genomes also include [b]Traditional[/b] (+Unity), [b]Charismatic[/b] (+Amenities), [b]Intelligent[/b] (+Research) or [b]Natural Physicists/Engineers/Sociologists[/b] (+Research)?[/quote]
@@ -30,6 +43,9 @@ Advanced gene-modding also unlocks [b]Optimised Habitability[/b], a flat 80% hab
 
 [quote]Can you make Optimised Habitability compatible with other mods that add extra planet types?[/quote]
 No, sorry. Don't use any mods like that, and I don't have time to make stuff I won't use.
+
+[quote]Can you make it intelligently add extra traits to species?[/quote]
+No, there's no way to get the current number of unused trait points. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2938437888&searchtext=]Genemod Micromanagement[/url] does that, but on a much lower cadence (decades) than this mod, due to the performance cost of manually checking every trait. I tried it, but made my own as I didn't really like the number of new species it made.
 
 [h1]Compatibility[/h1]
 This mod overrides the following:
@@ -61,4 +77,5 @@ If you like this, you might also like:
 [list]
 	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1355094979]Claims Decay - Dynamic Diplomacy:[/url] Friendly empires will renounce their claims on each other over time. Diplomatic Grants makes neutral empires do it too.
 	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1319264195]Loyal Subjects Have Nothing to Fear (from the Colossus):[/url] Loyal vassals and tributaries no longer suffer opinion penalties when you crack a planet.
+	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2949670744]Shared Burden Balance - People Power:[/url] Adds a flat bonus to political power to the Shared Burden living standard to remove its effective faction influence penalty.
 [/list]

@@ -5,5 +5,35 @@
  optgen_trait_bio_desc:0 " §LThis species' genome is highly flexible and responsive. Routine gene therapy allows them to gain and shed everything from muscle mass to social acuity as easily as another species might change their clothes.§!"
  optgen_trait_bio_tooltip:2 "£society_research£ Society Research Upkeep: §R+0.5§!"
 
+ optgen_trait_target:0 "Optimal Genome"
+ optgen_trait_target_desc:0 "§LGenetic modification is our art, and this composition is our magnum opus.§!"
+ optgen_trait_target_tooltip:0 "Subspecies of this species will be optimised to this template when our §PGenetic Optimisation Policy§! is §POptimal Genomes§!."
+
  trait_pc_optgen_preference:0 "Optimised Habitability"
  trait_pc_optgen_preference_desc:0 "§LThe highly-optimised genome of this species can seamlessly adapt to any climate.§!"
+ pc_optgen:0 "Optimised Habitability"
+ pc_optgen_desc:0 "§LThe highly-optimised genome of this species can seamlessly adapt to any climate.§!"
+ pc_optgen_adj:0 "Optimal Habitability"
+ mod_pc_optgen_habitability:0 "Optimised Habitability"
+
+ policy_optgen_policy:0 "Genetic Optimisation Policy"
+ policy_optgen_policy_desc:0 "We may re-write the genes of our citizenry as easily as we change our laws. How will we use this power?"
+
+ optgen_policy_none:0 "Special Projects only"
+ optgen_policy_none_desc:0 "We will continue our policy of modifying species only by one-off special projects."
+
+#  optgen_policy_flag_negative_name:0 "Remediate Flaws"
+#  optgen_policy_negative:0 "Remediate Flaws"
+#  optgen_policy_negative_desc:0 "Natural selection makes trade-offs. We need not.\n\n§EAdds a §!§R+5§!§E £society_research£ Society Research upkeep to Pops with free trait points and negative traits. Negative traits will be removed every month.§!"
+ optgen_policy_flag_negative_name:0 "Remediate Habitability"
+ optgen_policy_negative:0 "Remediate Habitability"
+ optgen_policy_negative_desc:0 "Natural selection makes trade-offs. We need not.\n\n§EAdds a §!§R+5§!§E £society_research£ Society Research upkeep to Pops with basic habitabilities.§!§YOptimal Habitability§!§E will be applied every month.§!"
+
+ optgen_policy_flag_upgrade_name:0 "Upgrade Traits"
+ optgen_policy_upgrade:0 "Upgrade Traits"
+ optgen_policy_upgrade_desc:0 "That which nature has created, we have perfected.\n\n§EAdds a §!§R+5§!§E £society_research£ Society Research upkeep to Pops with traits that are superceded by §!§YOptimised Genome§!§E or §!§YRobust§!§E. Traits will be replaced every month.§!"
+#  optgen_policy_upgrade_desc:0 "That which nature has created, we have perfected.\n\n§EAdds a §!§R+5§!§E £society_research£ Society Research upkeep to Pops with free trait points and traits that are superceded by advanced traits. Traits will be replaced by advanced traits every month. Will also add §!§POptimised Genome§!§E to species with pre-sapient traits that boost basic research production.§!"
+
+#  optgen_policy_flag_enhance_name:0 "Genetic Enhancement"
+#  optgen_policy_enhance:0 "Genetic Enhancement"
+#  optgen_policy_enhance_desc:0 "We will leave no slack in our citizens' genomes. Every opportunity for perfection will be taken.\n\n§EAdds a §!§R+5§!§E £society_research£ Society Research upkeep to Pops with free trait points. New traits will be added every month.§!"
