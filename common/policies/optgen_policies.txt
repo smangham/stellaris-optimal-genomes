@@ -1,0 +1,80 @@
+##########################################################################
+# Empire Policies
+#
+# #####
+#
+# AI:
+# Base AI-weight is 100, if unchanged
+# AI will grab whatever policy-option has the highest weight
+#
+# #####
+#
+##########################################################################
+
+
+optgen_policy = {
+	potential = {
+		OR = {
+			AND = {
+				is_country_type = default
+				has_tradition = tr_genetics_finish
+			}
+		}
+	}
+
+	option = {
+		name = "optgen_policy_none"
+
+		policy_flags = {
+		}
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = "optgen_policy_negative"
+
+		policy_flags = {
+			optgen_policy_flag_negative
+		}
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "optgen_policy_upgrade"
+
+		policy_flags = {
+			optgen_policy_flag_negative
+			optgen_policy_flag_upgrade
+		}
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	# option = {
+	# 	name = "optgen_policy_enhance"
+
+	# 	policy_flags = {
+	# 		optgen_policy_flag_enhance
+	# 	}
+	# 	modifier = {
+	# 	}
+
+	# 	AI_weight = {
+	# 		factor = 1
+	# 	}
+	# }
+}

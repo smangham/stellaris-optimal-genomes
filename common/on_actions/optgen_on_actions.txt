@@ -1,0 +1,11 @@
+# this = country
+on_monthly_pulse_country = {
+	events = {
+		optgen_policy.100
+		# optgen_policy.110
+		optgen_policy.200
+		# optgen_policy.210
+		# optgen_policy.220
+		# optgen_policy.300
+	}
+}

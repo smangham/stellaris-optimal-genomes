@@ -1,0 +1,83 @@
+# optgen_trigger_has_negative_trait = {
+# 	num_trait_points > 0
+# 	is_organic_species = yes
+# 	OR = {
+# 		has_trait = trait_fleeting
+# 		has_trait = trait_fleeting_lithoid
+# 		has_trait = trait_wasteful
+# 		has_trait = trait_nonadaptive
+# 		has_trait = trait_decadent
+# 		has_trait = trait_slow_breeders
+# 		has_trait = trait_slow_learners
+# 		has_trait = trait_quarrelsome
+# 		has_trait = trait_unruly
+# 		has_trait = trait_sedentary
+# 		has_trait = trait_weak
+# 		has_trait = trait_solitary
+# 		has_trait = trait_repugnant
+# 		has_trait = trait_deviants
+# 	}
+# }
+
+optgen_trigger_has_basic_habitability = {
+	is_organic_species = yes
+	OR = {
+		ideal_planet_class = pc_desert
+		ideal_planet_class = pc_arid
+		ideal_planet_class = pc_savannah
+		ideal_planet_class = pc_continental
+		ideal_planet_class = pc_tropical
+		ideal_planet_class = pc_ocean
+		ideal_planet_class = pc_alpine
+		ideal_planet_class = pc_tundra
+		ideal_planet_class = pc_arctic
+	}
+}
+
+optgen_trigger_has_upgradeable_basic_trait = {
+	is_organic_species = yes
+	OR = {
+		has_trait = trait_industrious
+		has_trait = trait_ingenious
+		has_trait = trait_agrarian
+		has_trait = trait_thrifty
+		has_trait = trait_natural_machinist
+	}
+}
+
+# optgen_trigger_has_upgradeable_intelligent = {
+# 	is_organic_species = yes
+# 	OR = {
+# 		AND = {
+# 			num_trait_points > 1
+# 			has_trait = trait_intelligent
+# 		}
+# 		AND = {
+# 			num_trait_points > 3
+# 			has_trait = trait_presapient_natural_intellectuals
+# 		}
+# 		AND = {
+# 			num_trait_points > 2
+# 			has_trait = trait_presapient_natural_intellectuals
+# 			has_trait = trait_talented
+# 		}
+# 	}
+# }
+
+# optgen_trigger_has_upgradeable_presapient_trait = {
+# 	num_trait_points > 1
+# 	is_organic_species = yes
+# 	OR = {
+# 		has_trait = trait_presapient_proles
+# 		has_trait = trait_syncretic_proles
+# 		has_trait = trait_nerve_stapled
+# 		has_trait = trait_presapient_earthbound
+# 	}
+# }
+
+optgen_trigger_enhanceable = {
+	is_organic_species = yes
+	OR = {
+		has_trait = trait_extremely_adaptive
+	}
+}

@@ -49,8 +49,45 @@ upkeep = {
 # Research Upkeep
 upkeep = {
 	trigger = {
-		is_organic_species = yes
 		has_trait = optgen_trait_bio
 	}
 	society_research = 0.5
+}
+upkeep = {
+	trigger = {
+		owner = {
+			has_policy_flag = optgen_policy_flag_upgrade
+		}
+		OR = {
+			optgen_trigger_has_upgradeable_basic_trait = yes
+			has_trait = trait_extremely_adaptive
+		}
+
+		# OR = {
+			# AND = {
+			# 	owner = {
+			# 		has_policy_flag = optgen_policy_flag_negative
+			# 	}
+			# 	optgen_trigger_has_negative_trait
+			# }
+			# # AND = {
+			# 	owner = {
+			# 		has_policy_flag = optgen_policy_flag_upgrade
+			# 	}
+			# 	OR = {
+			# 		optgen_trigger_has_upgradeable_basic_trait = yes
+			# 		has_trait = trait_extremely_adaptive
+			# 		# optgen_trigger_has_upgradeable_intelligent = yes
+			# 		# optgen_trigger_has_upgradeable_presapient_trait = yes
+			# 	}
+			# # }
+			# AND = {
+			# 	owner = {
+			# 		has_policy_flag = optgen_policy_flag_enhance
+			# 	}
+			# 	optgen_trigger_enhanceable = yes
+			# }
+		# }
+	}
+	society_research = 5.0
 }

@@ -1,0 +1,511 @@
+namespace = optgen_policy
+
+country_event = {
+	id = optgen_policy.100
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_policy_flag = optgen_policy_flag_negative
+		any_owned_pop = {
+			optgen_trigger_has_basic_habitability = yes
+		}
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				optgen_trigger_has_basic_habitability = yes
+			}
+
+			log = "Modifiying habitability of [this.GetName]"
+			modify_species = {
+				species = this
+				ideal_planet_class = pc_optgen
+				change_scoped_species = yes
+			}
+		}
+
+	}
+}
+
+# country_event = {
+# 	id = optgen_policy.110
+
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_policy_flag = optgen_policy_flag_negative
+# 		any_owned_pop = {
+# 			optgen_trigger_has_negative_trait = yes
+# 		}
+# 	}
+
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				num_trait_points > 0
+# 				OR = {
+# 					has_trait = trait_fleeting
+# 					has_trait = trait_fleeting_lithoid
+# 					has_trait = trait_wasteful
+# 					has_trait = trait_nonadaptive
+# 					has_trait = trait_decadent
+# 					has_trait = trait_slow_breeders
+# 					has_trait = trait_slow_learners
+# 					has_trait = trait_quarrelsome
+# 					has_trait = trait_unruly
+# 					has_trait = trait_sedentary
+# 					has_trait = trait_weak
+# 					has_trait = trait_solitary
+# 					has_trait = trait_repugnant
+# 					has_trait = trait_deviants
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					has_trait = trait_fleeting
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					remove_trait = trait_fleeting
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					has_trait = trait_fleeting_lithoid
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_fleeting
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_wasteful
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_wasteful
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_nonadaptive
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_nonadaptive
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_decadent
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_decadent
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_slow_breeders
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_slow_breeders
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_slow_learners
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_slow_learners
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_quarrelsome
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_quarrelsome
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_unruly
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_unruly
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_sedentary
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_sedentary
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_weak
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_weak
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_solitary
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_solitary
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_repugnant
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_repugnant
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					has_trait = trait_deviants
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					remove_trait = trait_deviants
+# 					change_scoped_species = yes
+# 				}
+# 			}
+# 		}
+		
+# 	}
+# }
+
+
+# ==============
+# Upgrade Traits
+# ==============
+country_event = {
+	id = optgen_policy.200
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_policy_flag = optgen_policy_flag_upgrade
+		any_owned_pop = {
+			OR = {
+				optgen_trigger_has_upgradeable_basic_trait = yes
+				has_trait = trait_extremely_adaptive
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				OR = {
+					optgen_trigger_has_upgradeable_basic_trait = yes
+					has_trait = trait_extremely_adaptive
+				}
+			}
+			if = {
+				limit = {
+					optgen_trigger_has_upgradeable_basic_trait = yes
+				}
+				modify_species = {
+					species = this
+					change_scoped_species = yes
+					add_trait = optgen_trait_bio
+					remove_trait = trait_industrious
+					remove_trait = trait_ingenious
+					remove_trait = trait_agrarian
+					remove_trait = trait_thrifty
+					remove_trait = trait_natural_machinist
+				}
+			}
+
+			if = {
+				limit = {
+					has_trait = trait_extremely_adaptive
+				}
+				modify_species = {
+					species = this
+					change_scoped_species = yes
+					add_trait = trait_robust
+					remove_trait = trait_extremely_adaptive
+				}
+			}
+		}
+	}
+}
+
+
+# ===================
+# Upgrade Intelligent
+# ===================
+# country_event = {
+# 	id = optgen_policy.220
+
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_policy_flag = optgen_policy_flag_upgrade
+# 		any_owned_pop = {
+# 			optgen_trigger_has_upgradeable_intelligent = yes
+# 		}
+# 	}
+
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				optgen_trigger_has_upgradeable_intelligent = yes
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				change_scoped_species = yes
+# 				add_trait = trait_erudite
+# 				remove_trait = trait_intelligent
+# 			}
+# 		}
+# 	}
+# }
+
+
+# ===================
+# Upgrade Presapients
+# ===================
+# country_event = {
+# 	id = optgen_policy.220
+
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_policy_flag = optgen_policy_flag_upgrade
+# 		any_owned_pop = {
+# 			optgen_trigger_has_upgradeable_presapient_trait = yes
+# 		}
+# 	}
+
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				optgen_trigger_has_upgradeable_presapient_trait = yes
+# 			}
+
+# 			modify_species = {
+# 				species = this
+# 				change_scoped_species = yes
+# 				add_trait = optgen_trait_bio
+# 			}
+# 		}
+# 	}
+# }
+
+
+# ===============
+# Generic enhance
+# ===============
+# country_event = {
+# 	id = optgen_policy.300
+
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_policy_flag = optgen_policy_flag_enhance
+# 		any_owned_pop = {
+# 			optgen_trigger_enhanceable = yes
+# 		}
+# 	}
+
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				optgen_trigger_enhanceable = yes
+# 			}
+
+# 			export_trigger_value_to_variable = {
+# 				trigger = num_trait_points
+# 				variable = trait_point_counter
+# 			}
+# 			log = "Printing amount [This.trait_point_counter] [This.species.GetName]"
+
+# 			if = {
+# 				limit = {
+# 					NOT = { has_trait = trait_robust }
+# 					OR= {
+# 						num_trait_points > 3
+# 						has_trait = trait_extremely_adaptive
+# 						AND = {
+# 							num_trait_points > 1
+# 							OR = {
+# 								has_trait = trait_adaptive
+# 								has_trait = trait_adaptive_lithoid
+# 							}
+# 						}
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_robust
+# 					remove_trait = trait_adaptive
+# 					remove_trait = trait_extremely_adaptive
+# 					remove_trait = trait_adaptive_lithoid
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					NOT = { has_trait = trait_robust }
+# 					OR= {
+# 						num_trait_points > 3
+# 						has_trait = trait_extremely_adaptive
+# 						AND = {
+# 							num_trait_points > 1
+# 							OR = {
+# 								has_trait = trait_adaptive
+# 								has_trait = trait_adaptive_lithoid
+# 							}
+# 						}
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_robust
+# 					remove_trait = trait_adaptive
+# 					remove_trait = trait_extremely_adaptive
+# 					remove_trait = trait_adaptive_lithoid
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					has_trait = trait_erudite
+# 					num_trait_points > 0
+# 					NOT = {
+# 						has_trait = trait_talented
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_talented
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					NOT = {
+# 						has_trait = trait_quick_learners
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_quick_learners
+# 					remove_trait = trait_slow_learners
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 3
+# 					NOT = {
+# 						has_trait = trait_fertile
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_fertile
+# 					remove_trait = trait_slow_breeders
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					NOT = {
+# 						has_trait = trait_conservational
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_conservational
+# 					remove_trait = trait_wasteful
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					NOT = {
+# 						has_trait = trait_docile
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_docile
+# 					remove_trait = trait_unruly
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					num_trait_points > 0
+# 					NOT = {
+# 						has_trait = trait_communal
+# 					}
+# 				}
+# 				modify_species = {
+# 					species = this
+# 					change_scoped_species = yes
+# 					add_trait = trait_communal
+# 					remove_trait = trait_solitary
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+

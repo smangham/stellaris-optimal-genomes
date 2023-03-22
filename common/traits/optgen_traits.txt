@@ -2,6 +2,8 @@ optgen_trait_bio = {
 	cost = 2
 	initial = no
 	randomized = no
+	advanced_trait = yes
+	potential_crossbreeding_chance = 0.0
 
 	species_potential_add = {
 		can_do_advanced_gene_modding = yes
@@ -13,9 +15,7 @@ optgen_trait_bio = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 0.0
-	initial = no
-	randomized = no
-	advanced_trait = yes
+
 	opposites = { 
 		trait_industrious
 		trait_ingenious
@@ -55,6 +55,33 @@ optgen_trait_bio = {
 		}
 	}
 }
+
+# optgen_trait_target = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	advanced_trait = yes
+
+# 	icon = "gfx/interface/icons/traits/optgen_trait_target.dds"
+# 	allowed_archetypes = { BIOLOGICAL LITHOID }
+# 	sorting_priority = 0
+
+# 	species_potential_add = {
+# 		can_do_advanced_gene_modding = yes
+# 		exists = from
+# 		from = {
+# 			has_tradition = tr_genetics_finish
+# 		}
+# 	}
+
+# 	custom_tooltip_with_modifiers = optgen_trait_target_tooltip
+
+# 	modifier = {
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }
 
 
 @primary = 0.80
