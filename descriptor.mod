@@ -1,9 +1,9 @@
-version="3.7.*"
+version="3.8.*"
 tags={
 	"Balance"
 	"Gameplay"
 }
 picture="thumbnail.png"
-name="Optimal Genomes - Better Genetic Ascension [3.7]"
-supported_version="3.7.*"
+name="[3.8] Optimal Genomes - Better Genetic Ascension"
+supported_version="3.8.*"
 remote_file_id="2948086213"

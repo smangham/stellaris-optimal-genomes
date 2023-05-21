@@ -1,5 +1,6 @@
 namespace = optgen_policy
 
+
 country_event = {
 	id = optgen_policy.100
 
@@ -8,7 +9,7 @@ country_event = {
 
 	trigger = {
 		has_policy_flag = optgen_policy_flag_negative
-		any_owned_pop = {
+		any_owned_species = {
 			optgen_trigger_has_basic_habitability = yes
 		}
 	}
@@ -28,7 +29,6 @@ country_event = {
 				change_scoped_species = yes
 			}
 		}
-
 	}
 }
 
@@ -234,7 +234,7 @@ country_event = {
 
 	trigger = {
 		has_policy_flag = optgen_policy_flag_upgrade
-		any_owned_pop = {
+		any_owned_species = {
 			OR = {
 				optgen_trigger_has_upgradeable_basic_trait = yes
 				has_trait = trait_extremely_adaptive

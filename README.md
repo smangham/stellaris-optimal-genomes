@@ -1,14 +1,4 @@
-Lithoid & plantoid advanced traits
-Intelligent -> Erudite
-Adaptive -> Robust
-Slave -> Nerve Stapled (not trait_zombie)
-trait_presapient_proles -> Optimal Genome
-trait_presapient_natural_intellectuals -> Erudite
-
-Switch to Optimal Habitability
-
-
-[b]Version 3.7.*[/b]
+[b]Version 3.8.*[/b]
 
 Genetic Ascension lets you tailor your species to meet any need, serve any niche. The UI... does not. You need to a massive stable of templates you have to constantly re-apply, and still end up with pops with the wrong traits. 
 
@@ -78,4 +68,5 @@ If you like this, you might also like:
 	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1355094979]Claims Decay - Dynamic Diplomacy:[/url] Friendly empires will renounce their claims on each other over time. Diplomatic Grants makes neutral empires do it too.
 	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1319264195]Loyal Subjects Have Nothing to Fear (from the Colossus):[/url] Loyal vassals and tributaries no longer suffer opinion penalties when you crack a planet.
 	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2949670744]Shared Burden Balance - People Power:[/url] Adds a flat bonus to political power to the Shared Burden living standard to remove its effective faction influence penalty.
+	[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2953156241][spoiler]Mass Driver Rebuilt[/spoiler] - Fear the Dark:[/url] Adds an extra bonus to the end of the Fear of the Dark origin quest chain.
 [/list]
