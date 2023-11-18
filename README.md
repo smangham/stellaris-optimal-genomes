@@ -1,4 +1,4 @@
-[b]Version 3.8.*[/b]
+[b]Version 3.10.*[/b]
 
 Genetic Ascension lets you tailor your species to meet any need, serve any niche. The UI... does not. You need to a massive stable of templates you have to constantly re-apply, and still end up with pops with the wrong traits. 
 
